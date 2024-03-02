@@ -30,7 +30,7 @@ if (typeof QUICKNODE_BNB_RPC_URL === 'undefined') {
 export const FALLBACK_URLS = {
   [ChainId.MAGMA_TESTNET]: [
     // "Safe" URLs
-   "https://rpc.onyx.magma.foundation"
+   "https://turbo.magma-rpc.com/"
   ],
   [ChainId.MAINNET]: [
     // "Safe" URLs

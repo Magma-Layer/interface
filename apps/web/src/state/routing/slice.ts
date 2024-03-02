@@ -193,6 +193,7 @@ export const routingApi = createApi({
             return { data: { ...quoteResult, latencyMs: getQuoteLatencyMeasure(quoteStartMark).duration } }
           }
         } catch (error: any) {
+          console.error("getQuote",error)
           console.warn(`GetQuote failed on client: ${error}`)
           return {
             error: { status: 'CUSTOM_ERROR', error: error?.detail ?? error?.message ?? error },
