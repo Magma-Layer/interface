@@ -110,9 +110,11 @@ function DoubleCurrencyLogo({ chainId, currencies, backupImages, size }: DoubleC
   if (currencies.length === 1 && src) {
     return <CircleLogoImage size={size} src={src} onError={nextSrc} />
   }
+
   if (currencies.length > 1) {
     return <DoubleLogo logo1={src} onError1={nextSrc} logo2={src2} onError2={nextSrc2} size={size} />
   }
+
   return (
     <MissingImageLogo size={size}>
       {currencies[0]?.symbol?.toUpperCase().replace('$', '').replace(/\s+/g, '').slice(0, 3)}
@@ -159,21 +161,26 @@ export function PortfolioLogo(props: PortfolioLogoProps) {
   return (
     <LogoContainer style={props.style}>
       {getLogo(props)}
-      <SquareL2Logo chainId={props.chainId} />
+      {/* <SquareL2Logo chainId={props.chainId} /> */}
     </LogoContainer>
   )
 }
 
 function getLogo({ chainId, accountAddress, currencies, images, size = '40px' }: PortfolioLogoProps) {
+
   if (accountAddress) {
     return <PortfolioAvatar accountAddress={accountAddress} size={size} />
   }
+
+
   if (currencies && currencies.length) {
     return <DoubleCurrencyLogo chainId={chainId} currencies={currencies} backupImages={images} size={size} />
   }
+
   if (images?.length === 1) {
     return <CircleLogoImage size={size} src={images[0] ?? blankTokenUrl} />
   }
+
   if (images && images?.length >= 2) {
     return <DoubleLogo logo1={images[0]} logo2={images[images.length - 1]} size={size} />
   }

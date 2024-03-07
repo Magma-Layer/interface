@@ -66,7 +66,7 @@ const meta: Meta<typeof WrapSummaryItem> = {
                   id: 'VG9rZW5Qcm9qZWN0OlRva2VuOkFSQklUUlVNXzB4ODJhRjQ5NDQ3RDhhMDdlM2JkOTVCRDBkNTZmMzUyNDE1MjNmQmFiMQ==',
                   isSpam: false,
                   logoUrl:
-                    'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
+                    'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
                   safetyLevel: 'VERIFIED',
                 },
                 symbol: 'WETH',

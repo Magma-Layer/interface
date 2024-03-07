@@ -90,7 +90,7 @@ export interface RouteDefinition {
 function createRouteDefinition(route: Partial<RouteDefinition>): RouteDefinition {
   return {
     getElement: () => null,
-    getTitle: () => 'Uniswap Interface',
+    getTitle: () => 'Magma Swap Interface',
     enabled: () => true,
     path: '/',
     nestedPaths: [],
@@ -102,119 +102,124 @@ function createRouteDefinition(route: Partial<RouteDefinition>): RouteDefinition
 export const routes: RouteDefinition[] = [
   createRouteDefinition({
     path: '/',
-    getTitle: () => t`Uniswap | Trade crypto & NFTs safely on the top DeFi exchange`,
-    getElement: (args) => {
-      return args.browserRouterEnabled && args.hash ? <Navigate to={args.hash.replace('#', '')} replace /> : <Landing />
-    },
-  }),
-  createRouteDefinition({
-    path: '/explore',
-    getTitle: getExploreTitle,
-    nestedPaths: [':tab', ':chainName', ':tab/:chainName'],
-    getElement: () => <RedirectExplore />,
-    enabled: (args) => Boolean(args.infoExplorePageEnabled),
-  }),
-  createRouteDefinition({
-    path: '/explore/tokens/:chainName/:tokenAddress',
-    getTitle: () => t`Buy & sell on Uniswap`,
-    getElement: () => <TokenDetails />,
-    enabled: (args) => Boolean(args.infoExplorePageEnabled),
-  }),
-  createRouteDefinition({
-    path: '/tokens',
-    getTitle: getDefaultTokensTitle,
-    getElement: (args) => {
-      return args.infoExplorePageEnabled ? <Navigate to="/explore/tokens" replace /> : <Explore />
-    },
-  }),
-  createRouteDefinition({
-    path: '/tokens/:chainName',
-    getTitle: getDefaultTokensTitle,
-    getElement: (args) => {
-      return args.infoExplorePageEnabled ? <RedirectExplore /> : <Explore />
-    },
-  }),
-  createRouteDefinition({
-    path: '/tokens/:chainName/:tokenAddress',
-    getTitle: getDefaultTokensTitle,
-    getElement: (args) => {
-      return args.infoExplorePageEnabled ? <RedirectExplore /> : <TokenDetails />
-    },
-  }),
-  createRouteDefinition({
-    path: '/explore/pools/:chainName/:poolAddress',
-    getTitle: () => t`Explore pools on Uniswap`,
-    getElement: () => (
-      <Suspense fallback={null}>
-        <PoolDetails />
-      </Suspense>
-    ),
-    enabled: (args) => Boolean(args.infoExplorePageEnabled && args.infoPoolPageEnabled),
-  }),
-  createRouteDefinition({
-    path: '/vote/*',
-    getTitle: () => t`Vote on governance proposals on Uniswap`,
-    getElement: () => (
-      <Suspense fallback={<LazyLoadSpinner />}>
-        <Vote />
-      </Suspense>
-    ),
-  }),
-  createRouteDefinition({
-    path: '/create-proposal',
-    getTitle: () => t`Create a new governance proposal on Uniswap`,
-    getElement: () => <Navigate to="/vote/create-proposal" replace />,
-  }),
-  createRouteDefinition({
-    path: '/send',
-    getElement: () => <Navigate to={{ ...location, pathname: '/swap' }} replace />,
-  }),
-  createRouteDefinition({
-    path: '/swap',
     getElement: () => <Swap />,
-    getTitle: () => t`Buy, sell & trade Ethereum and other top tokens on Uniswap`,
+    getTitle: () => `Buy, sell & trade Magma and other top tokens on Magma Swap`,
   }),
+  // createRouteDefinition({
+  //   path: '/',
+  //   getTitle: () => t`Uniswap | Trade crypto & NFTs safely on the top DeFi exchange`,
+  //   getElement: (args) => {
+  //     return args.browserRouterEnabled && args.hash ? <Navigate to={args.hash.replace('#', '')} replace /> : <Landing />
+  //   },
+  // }),
+  // createRouteDefinition({
+  //   path: '/explore',
+  //   getTitle: getExploreTitle,
+  //   nestedPaths: [':tab', ':chainName', ':tab/:chainName'],
+  //   getElement: () => <RedirectExplore />,
+  //   enabled: (args) => Boolean(args.infoExplorePageEnabled),
+  // }),
+  // createRouteDefinition({
+  //   path: '/explore/tokens/:chainName/:tokenAddress',
+  //   getTitle: () => t`Buy & sell on Uniswap`,
+  //   getElement: () => <TokenDetails />,
+  //   enabled: (args) => Boolean(args.infoExplorePageEnabled),
+  // }),
+  // createRouteDefinition({
+  //   path: '/tokens',
+  //   getTitle: getDefaultTokensTitle,
+  //   getElement: (args) => {
+  //     return args.infoExplorePageEnabled ? <Navigate to="/explore/tokens" replace /> : <Explore />
+  //   },
+  // }),
+  // createRouteDefinition({
+  //   path: '/tokens/:chainName',
+  //   getTitle: getDefaultTokensTitle,
+  //   getElement: (args) => {
+  //     return args.infoExplorePageEnabled ? <RedirectExplore /> : <Explore />
+  //   },
+  // }),
+  // createRouteDefinition({
+  //   path: '/tokens/:chainName/:tokenAddress',
+  //   getTitle: getDefaultTokensTitle,
+  //   getElement: (args) => {
+  //     return args.infoExplorePageEnabled ? <RedirectExplore /> : <TokenDetails />
+  //   },
+  // }),
+  // createRouteDefinition({
+  //   path: '/explore/pools/:chainName/:poolAddress',
+  //   getTitle: () => t`Explore pools on Uniswap`,
+  //   getElement: () => (
+  //     <Suspense fallback={null}>
+  //       <PoolDetails />
+  //     </Suspense>
+  //   ),
+  //   enabled: (args) => Boolean(args.infoExplorePageEnabled && args.infoPoolPageEnabled),
+  // }),
+  // createRouteDefinition({
+  //   path: '/vote/*',
+  //   getTitle: () => t`Vote on governance proposals on Uniswap`,
+  //   getElement: () => (
+  //     <Suspense fallback={<LazyLoadSpinner />}>
+  //       <Vote />
+  //     </Suspense>
+  //   ),
+  // }),
+  // createRouteDefinition({
+  //   path: '/create-proposal',
+  //   getTitle: () => t`Create a new governance proposal on Uniswap`,
+  //   getElement: () => <Navigate to="/vote/create-proposal" replace />,
+  // }),
+  // createRouteDefinition({
+  //   path: '/send',
+  //   getElement: () => <Navigate to={{ ...location, pathname: '/swap' }} replace />,
+  // }),
+  // createRouteDefinition({
+  //   path: '/swap',
+  //   getElement: () => <Swap />,
+  //   getTitle: () => t`Buy, sell & trade Ethereum and other top tokens on Uniswap`,
+  // }),
   createRouteDefinition({
     path: '/pool/v2/find',
     getElement: () => <PoolFinder />,
-    getTitle: () => t`Explore top liquidity pools (v2) on Uniswap`,
+    getTitle: () => t`Explore top liquidity pools (v2) on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/pool/v2',
     getElement: () => <PoolV2 />,
-    getTitle: () => t`Provide liquidity to pools (v2) on Uniswap`,
+    getTitle: () => t`Provide liquidity to pools (v2) on Magma Swap`,
   }),
   createRouteDefinition({ path: '/pool', getElement: () => <Pool /> }),
   createRouteDefinition({
     path: '/pool/:tokenId',
     getElement: () => <PositionPage />,
-    getTitle: () => t`Manage pool liquidity on Uniswap`,
+    getTitle: () => t`Manage pool liquidity on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/pools/v2/find',
     getElement: () => <PoolFinder />,
-    getTitle: () => t`Explore top liquidity pools (v2) on Uniswap`,
+    getTitle: () => t`Explore top liquidity pools (v2) on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/pools/v2',
     getElement: () => <PoolV2 />,
-    getTitle: () => t`Manage & provide v2 pool liquidity on Uniswap`,
+    getTitle: () => t`Manage & provide v2 pool liquidity on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/pools',
     getElement: () => <Pool />,
-    getTitle: () => t`Manage & provide pool liquidity on Uniswap`,
+    getTitle: () => t`Manage & provide pool liquidity on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/pools/:tokenId',
     getElement: () => <PositionPage />,
-    getTitle: () => t`Manage pool liquidity on Uniswap`,
+    getTitle: () => t`Manage pool liquidity on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/add/v2',
     nestedPaths: [':currencyIdA', ':currencyIdA/:currencyIdB'],
     getElement: () => <AddLiquidityV2WithTokenRedirects />,
-    getTitle: () => t`Provide liquidity to pools (v2) on Uniswap`,
+    getTitle: () => t`Provide liquidity to pools (v2) on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/add',
@@ -225,78 +230,78 @@ export const routes: RouteDefinition[] = [
       ':currencyIdA/:currencyIdB/:feeAmount/:tokenId',
     ],
     getElement: () => <AddLiquidityWithTokenRedirects />,
-    getTitle: () => t`Provide liquidity to pools on Uniswap`,
+    getTitle: () => t`Provide liquidity to pools on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/remove/v2/:currencyIdA/:currencyIdB',
     getElement: () => <RemoveLiquidity />,
-    getTitle: () => t`Manage v2 pool liquidity on Uniswap`,
+    getTitle: () => t`Manage v2 pool liquidity on Magma Swap`,
   }),
   createRouteDefinition({
     path: '/remove/:tokenId',
     getElement: () => <RemoveLiquidityV3 />,
-    getTitle: () => t`Manage pool liquidity on Uniswap`,
+    getTitle: () => t`Manage pool liquidity on Magma Swap`,
   }),
-  createRouteDefinition({
-    path: '/migrate/v2',
-    getElement: () => <MigrateV2 />,
-    getTitle: () => t`Migrate v2 pool liquidity to Uniswap v3`,
-  }),
-  createRouteDefinition({
-    path: '/migrate/v2/:address',
-    getElement: () => <MigrateV2Pair />,
-    getTitle: () => t`Migrate v2 pool liquidity to Uniswap v3`,
-  }),
-  createRouteDefinition({
-    path: '/nfts',
-    getElement: () => (
-      <Suspense fallback={null}>
-        <NftExplore />
-      </Suspense>
-    ),
-    enabled: (args) => !args.shouldDisableNFTRoutes,
-    getTitle: () => t`Trade NFTs across OpenSea & other top marketplaces on Uniswap`,
-  }),
-  createRouteDefinition({
-    path: '/nfts/asset/:contractAddress/:tokenId',
-    getElement: () => (
-      <Suspense fallback={null}>
-        <Asset />
-      </Suspense>
-    ),
-    enabled: (args) => !args.shouldDisableNFTRoutes,
-    getTitle: () => t`Explore NFTs on Uniswap`,
-  }),
-  createRouteDefinition({
-    path: '/nfts/profile',
-    getElement: () => (
-      <Suspense fallback={null}>
-        <Profile />
-      </Suspense>
-    ),
-    enabled: (args) => !args.shouldDisableNFTRoutes,
-    getTitle: () => t`Explore NFTs on Uniswap`,
-  }),
-  createRouteDefinition({
-    path: '/nfts/collection/:contractAddress',
-    getElement: () => (
-      <Suspense fallback={null}>
-        <Collection />
-      </Suspense>
-    ),
-    enabled: (args) => !args.shouldDisableNFTRoutes,
-    getTitle: () => t`Explore NFTs on Uniswap`,
-  }),
-  createRouteDefinition({
-    path: '/nfts/collection/:contractAddress/activity',
-    getElement: () => (
-      <Suspense fallback={null}>
-        <Collection />
-      </Suspense>
-    ),
-    enabled: (args) => !args.shouldDisableNFTRoutes,
-    getTitle: () => t`Explore NFTs on Uniswap`,
-  }),
+  // createRouteDefinition({
+  //   path: '/migrate/v2',
+  //   getElement: () => <MigrateV2 />,
+  //   getTitle: () => t`Migrate v2 pool liquidity to Uniswap v3`,
+  // }),
+  // createRouteDefinition({
+  //   path: '/migrate/v2/:address',
+  //   getElement: () => <MigrateV2Pair />,
+  //   getTitle: () => t`Migrate v2 pool liquidity to Uniswap v3`,
+  // }),
+  // createRouteDefinition({
+  //   path: '/nfts',
+  //   getElement: () => (
+  //     <Suspense fallback={null}>
+  //       <NftExplore />
+  //     </Suspense>
+  //   ),
+  //   enabled: (args) => !args.shouldDisableNFTRoutes,
+  //   getTitle: () => t`Trade NFTs across OpenSea & other top marketplaces on Uniswap`,
+  // }),
+  // createRouteDefinition({
+  //   path: '/nfts/asset/:contractAddress/:tokenId',
+  //   getElement: () => (
+  //     <Suspense fallback={null}>
+  //       <Asset />
+  //     </Suspense>
+  //   ),
+  //   enabled: (args) => !args.shouldDisableNFTRoutes,
+  //   getTitle: () => t`Explore NFTs on Uniswap`,
+  // }),
+  // createRouteDefinition({
+  //   path: '/nfts/profile',
+  //   getElement: () => (
+  //     <Suspense fallback={null}>
+  //       <Profile />
+  //     </Suspense>
+  //   ),
+  //   enabled: (args) => !args.shouldDisableNFTRoutes,
+  //   getTitle: () => t`Explore NFTs on Uniswap`,
+  // }),
+  // createRouteDefinition({
+  //   path: '/nfts/collection/:contractAddress',
+  //   getElement: () => (
+  //     <Suspense fallback={null}>
+  //       <Collection />
+  //     </Suspense>
+  //   ),
+  //   enabled: (args) => !args.shouldDisableNFTRoutes,
+  //   getTitle: () => t`Explore NFTs on Uniswap`,
+  // }),
+  // createRouteDefinition({
+  //   path: '/nfts/collection/:contractAddress/activity',
+  //   getElement: () => (
+  //     <Suspense fallback={null}>
+  //       <Collection />
+  //     </Suspense>
+  //   ),
+  //   enabled: (args) => !args.shouldDisableNFTRoutes,
+  //   getTitle: () => t`Explore NFTs on Uniswap`,
+  // }),
   createRouteDefinition({ path: '*', getElement: () => <Navigate to="/not-found" replace /> }),
   createRouteDefinition({ path: '/not-found', getElement: () => <NotFound /> }),
 ]

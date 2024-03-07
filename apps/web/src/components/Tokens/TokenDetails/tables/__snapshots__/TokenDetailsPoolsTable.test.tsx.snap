@@ -49,7 +49,7 @@ exports[`TDPPoolTable renders data filled state 1`] = `
 }
 
 .c26 path {
-  stroke: #FC72FF;
+  stroke: #EA462B;
   background: #7D7D7D;
   fill: none;
 }
@@ -160,7 +160,7 @@ exports[`TDPPoolTable renders data filled state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #FC72FF;
+  color: #EA462B;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -662,7 +662,7 @@ exports[`TDPPoolTable renders data filled state 1`] = `
             <svg
               class="c26 c27"
               fill="none"
-              stroke="#FC72FF"
+              stroke="#EA462B"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -731,7 +731,7 @@ exports[`TDPPoolTable renders loading state 1`] = `
 }
 
 .c21 path {
-  stroke: #FC72FF;
+  stroke: #EA462B;
   background: #7D7D7D;
   fill: none;
 }
@@ -834,7 +834,7 @@ exports[`TDPPoolTable renders loading state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #FC72FF;
+  color: #EA462B;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -3089,7 +3089,7 @@ exports[`TDPPoolTable renders loading state 1`] = `
             <svg
               class="c21 c22"
               fill="none"
-              stroke="#FC72FF"
+              stroke="#EA462B"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

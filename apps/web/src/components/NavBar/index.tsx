@@ -72,10 +72,13 @@ export const PageTabs = () => {
 
   return (
     <>
-      <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
+      <MenuItem href="/" isActive={pathname.startsWith('/')}>
         <Trans>Swap</Trans>
       </MenuItem>
-      {infoExplorePageEnabled ? (
+      <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
+          <Trans>Pools</Trans>
+        </MenuItem>
+      {/* {infoExplorePageEnabled ? (
         <MenuItem
           href={'/explore' + (chainName !== Chain.Ethereum ? `/${chainName.toLowerCase()}` : '')}
           isActive={pathname.startsWith('/explore')}
@@ -96,14 +99,14 @@ export const PageTabs = () => {
         <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Pools</Trans>
         </MenuItem>
-      </Box>
-      {isNewLandingPageEnabled ? (
+      </Box> */}
+      {/* {isNewLandingPageEnabled ? (
         <More />
       ) : (
         <Box marginY="4">
           <MenuDropdown />
         </Box>
-      )}
+      )} */}
     </>
   )
 }
@@ -141,7 +144,7 @@ const Navbar = ({ blur }: { blur: boolean }) => {
               <UniIcon
                 width="48"
                 height="48"
-                data-testid="uniswap-logo"
+                data-testid="magma-swap-logo"
                 className={styles.logo}
                 clickable={!account}
                 onClick={handleUniIconClick}
@@ -162,12 +165,12 @@ const Navbar = ({ blur }: { blur: boolean }) => {
               display: 'flex',
             })}
           >
-            <SearchBar />
+            {/* <SearchBar /> */}
           </Box>
           <Box className={styles.rightSideContainer}>
             <Row gap="12">
               <Box position="relative" display={isNavSearchInputVisible ? 'none' : { sm: 'flex' }}>
-                <SearchBar />
+                {/* <SearchBar /> */}
               </Box>
               {isNftPage && sellPageState !== ProfilePageStateType.LISTING && <Bag />}
               {!isNftPage && (
@@ -175,7 +178,7 @@ const Navbar = ({ blur }: { blur: boolean }) => {
                   <ChainSelector />
                 </Box>
               )}
-              {isLandingPage && isNewLandingPageEnabled && <GetTheAppButton />}
+              {/* {isLandingPage && isNewLandingPageEnabled && <GetTheAppButton />} */}
               <Web3Status />
             </Row>
           </Box>

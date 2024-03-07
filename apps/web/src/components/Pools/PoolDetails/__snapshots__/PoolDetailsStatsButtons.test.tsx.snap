@@ -425,7 +425,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
 
 .c48 {
   background-color: #FFEFFF;
-  color: #FC72FF;
+  color: #EA462B;
   font-size: 20px;
   font-weight: 535;
 }
@@ -796,8 +796,8 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
   border-radius: 900px;
   width: 50%;
   gap: 8px;
-  color: #FC72FF;
-  background-color: #FC72FF1f;
+  color: #EA462B;
+  background-color: #EA462B1f;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -820,7 +820,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
 }
 
 .c5 {
-  fill: #FC72FF;
+  fill: #EA462B;
   rotate: 90deg;
 }
 
@@ -1043,7 +1043,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
                                 >
                                   <img
                                     class="c37"
-                                    src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                                    src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                                   />
                                 </div>
                               </div>
@@ -1173,7 +1173,7 @@ exports[`PoolDetailsStatsButton renders both buttons correctly 1`] = `
                                   >
                                     <img
                                       class="c37"
-                                      src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                                      src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                                     />
                                   </div>
                                 </div>

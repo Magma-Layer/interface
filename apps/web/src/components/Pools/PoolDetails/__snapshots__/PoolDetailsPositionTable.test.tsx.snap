@@ -201,7 +201,7 @@ exports[`PoolDetailsPositionsTable renders with PositionStatus Closed 1`] = `
           <img
             class="c6"
             size="16"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
           />
           <img
             class="c6"
@@ -506,7 +506,7 @@ exports[`PoolDetailsPositionsTable renders with PositionStatus In Range 1`] = `
           <img
             class="c6"
             size="16"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
           />
           <img
             class="c6"
@@ -772,7 +772,7 @@ exports[`PoolDetailsPositionsTable renders with PositionStatus Out Of Range 1`] 
           <img
             class="c6"
             size="16"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
           />
           <img
             class="c6"

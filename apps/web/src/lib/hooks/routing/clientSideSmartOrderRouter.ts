@@ -50,7 +50,6 @@ async function getQuote(
     ? nativeOnChain(tokenOut.chainId)
     : new Token(tokenOut.chainId, tokenOut.address, tokenOut.decimals, tokenOut.symbol)
 
-  console.log("pointttttt",{currencyIn,currencyOut})
   const baseCurrency = tradeType === TradeType.EXACT_INPUT ? currencyIn : currencyOut
   const quoteCurrency = tradeType === TradeType.EXACT_INPUT ? currencyOut : currencyIn
 

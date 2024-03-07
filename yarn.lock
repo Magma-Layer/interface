@@ -13088,11 +13088,11 @@ __metadata:
     "@uniswap/permit2-sdk": 1.2.0
     "@uniswap/redux-multicall": 1.1.8
     "@uniswap/router-sdk": 1.7.1
-    "@uniswap/sdk-core": 4.0.7
-    "@uniswap/smart-order-router": "file:../../../smart-order-router"
+    "@uniswap/sdk-core": "https://github.com/Mantle-Protocol/sdk-core"
+    "@uniswap/smart-order-router": "https://github.com/Mantle-Protocol/smart-order-router"
     "@uniswap/token-lists": 1.0.0-beta.33
     "@uniswap/uniswapx-sdk": 1.4.1
-    "@uniswap/universal-router-sdk": "file:../../../universal-router-sdk"
+    "@uniswap/universal-router-sdk": "https://github.com/Mantle-Protocol/universal-router-sdk"
     "@uniswap/v2-core": 1.0.1
     "@uniswap/v2-periphery": 1.1.0-beta.0
     "@uniswap/v2-sdk": 4.1.0
@@ -13466,9 +13466,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniswap/sdk-core@file:../sdk-core/::locator=universe%40workspace%3A.":
+"@uniswap/sdk-core@https://github.com/Mantle-Protocol/sdk-core":
   version: 4.1.2
-  resolution: "@uniswap/sdk-core@file:../sdk-core/#../sdk-core/::hash=072064&locator=universe%40workspace%3A."
+  resolution: "@uniswap/sdk-core@https://github.com/Mantle-Protocol/sdk-core.git#commit=3262b43c2bf9144907bcb1d5041c90d193ce8d8c"
   dependencies:
     "@ethersproject/address": ^5.0.2
     "@ethersproject/bignumber": ^5.7.0
@@ -13477,18 +13477,17 @@ __metadata:
     jsbi: ^3.2.0
     tiny-invariant: ^1.1.0
     toformat: ^2.0.0
-  checksum: 805781a8a858da4bf92a11d9ee06660b89dacd142f15626a429c7bdd74e7d7737b32e7cad66862572f88dc906be6d527905b04346f25024d90b6b880cdb2809b
+  checksum: a9d1d4e1e83362250774852f1e34e76e7a2277a70cec258c838d6ab7426768f4e8e21879ca8c6b94ccce6fe4409d3950167048b090e714973efd1cd44e4b6dfb
   languageName: node
   linkType: hard
 
-"@uniswap/smart-order-router@file:../../../smart-order-router::locator=%40uniswap%2Finterface%40workspace%3Aapps%2Fweb":
-  version: 3.17.3
-  resolution: "@uniswap/smart-order-router@file:../../../smart-order-router#../../../smart-order-router::hash=7aabb7&locator=%40uniswap%2Finterface%40workspace%3Aapps%2Fweb"
+"@uniswap/smart-order-router@https://github.com/Mantle-Protocol/smart-order-router":
+  version: 3.17.4
+  resolution: "@uniswap/smart-order-router@https://github.com/Mantle-Protocol/smart-order-router.git#commit=05ae296a6b1a4877ffa9d71563be79e0f2a198ab"
   dependencies:
     "@uniswap/default-token-list": ^11.2.0
     "@uniswap/permit2-sdk": ^1.2.0
     "@uniswap/router-sdk": ^1.6.0
-    "@uniswap/sdk-core": "github:Mantle-Protocol/sdk-core"
     "@uniswap/swap-router-contracts": ^1.3.0
     "@uniswap/token-lists": ^1.0.0-beta.31
     "@uniswap/universal-router": ^1.0.1
@@ -13509,7 +13508,7 @@ __metadata:
     stats-lite: ^2.2.0
   peerDependencies:
     jsbi: ^3.2.0
-  checksum: 5e7a95c33fca347d88865adc635d916897379a2fe4139d42acff5dd1762f34ac73f96a87e12a78d11414036fb4dd8ee0d418ab7d0f048fa85a398542954ccb6a
+  checksum: e7411abbb4c05650e9a58f53f0b2d17a55eeab8d47ce2a2b3f3086ea04e9da4b2ec02922969198ec7ae4e24448588405a3de4c2606a42cdd5ae161995af04dfc
   languageName: node
   linkType: hard
 
@@ -13547,19 +13546,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniswap/universal-router-sdk@file:../../../universal-router-sdk::locator=%40uniswap%2Finterface%40workspace%3Aapps%2Fweb":
+"@uniswap/universal-router-sdk@https://github.com/Mantle-Protocol/universal-router-sdk":
   version: 1.7.1
-  resolution: "@uniswap/universal-router-sdk@file:../../../universal-router-sdk#../../../universal-router-sdk::hash=3004c9&locator=%40uniswap%2Finterface%40workspace%3Aapps%2Fweb"
+  resolution: "@uniswap/universal-router-sdk@https://github.com/Mantle-Protocol/universal-router-sdk.git#commit=9b26fc71adef625faa32814aab4de250e2d48781"
   dependencies:
     "@uniswap/permit2-sdk": ^1.2.0
     "@uniswap/router-sdk": ^1.8.0
-    "@uniswap/sdk-core": ^4.1.2
-    "@uniswap/universal-router": "file:../universal-router"
+    "@uniswap/sdk-core": "https://github.com/Mantle-Protocol/sdk-core"
+    "@uniswap/universal-router": "https://github.com/Mantle-Protocol/universal-router"
     "@uniswap/v2-sdk": ^4.1.0
     "@uniswap/v3-sdk": ^3.10.1
     bignumber.js: ^9.0.2
     ethers: ^5.3.1
-  checksum: e7dfc803300767f4419950bb01a54c95a8010cd05b0b65a6bf43a4009bbc165dd68ad95d558a97966f6a715e5621e3b48d9da113a55e9ee15fc88fa7dfcbd2ea
+  checksum: 668dbfcd782057299a7bd9613297bf096672097d7b51395e8b2157a6b1d98376134f9c3b8ce991836b08f2b2b189c83f03a79a7aa76c248962cd38780d7ba89d
   languageName: node
   linkType: hard
 
@@ -13595,14 +13594,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniswap/universal-router@file:../universal-router::locator=%40uniswap%2Funiversal-router-sdk%40file%3A..%2F..%2F..%2Funiversal-router-sdk%23..%2F..%2F..%2Funiversal-router-sdk%3A%3Ahash%3D3004c9%26locator%3D%2540uniswap%252Finterface%2540workspace%253Aapps%252Fweb":
+"@uniswap/universal-router@https://github.com/Mantle-Protocol/universal-router":
   version: 1.6.0
-  resolution: "@uniswap/universal-router@file:../universal-router#../universal-router::hash=aaa0ce&locator=%40uniswap%2Funiversal-router-sdk%40file%3A..%2F..%2F..%2Funiversal-router-sdk%23..%2F..%2F..%2Funiversal-router-sdk%3A%3Ahash%3D3004c9%26locator%3D%2540uniswap%252Finterface%2540workspace%253Aapps%252Fweb"
+  resolution: "@uniswap/universal-router@https://github.com/Mantle-Protocol/universal-router.git#commit=a2b8e6d4ce2d7f69cfda6a2b926e5e4332c20666"
   dependencies:
     "@openzeppelin/contracts": 4.7.0
     "@uniswap/v2-core": 1.0.1
     "@uniswap/v3-core": 1.0.0
-  checksum: 6c792cc62d19580e08ec336b23100df10184d09d7d324c5af52acf11ef797823d0006a5e7168c50751630c52ffa904978062901bd05daed4f12690dc39a1674e
+  checksum: a0b4cbff4ef22b165044b153d5f7ae1f0803849821365b2e63b4dca168835d2c03b43cbf35e77d40ea4ab8316a182ad8dcf9b891bbb4012f8913c005982131ec
   languageName: node
   linkType: hard
 

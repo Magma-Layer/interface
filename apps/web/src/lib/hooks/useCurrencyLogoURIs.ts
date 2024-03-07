@@ -5,6 +5,8 @@ import { isAddress } from 'utils'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import AvaxLogo from '../../assets/svg/avax_logo.svg'
+import LavaLogo from '../../assets/svg/lava_logo.svg'
+
 import BnbLogo from '../../assets/svg/bnb-logo.svg'
 import CeloLogo from '../../assets/svg/celo_logo.svg'
 import MaticLogo from '../../assets/svg/matic-token-icon.svg'
@@ -47,6 +49,8 @@ export function getNativeLogoURI(chainId: ChainId = ChainId.MAINNET): string {
       return CeloLogo
     case ChainId.AVALANCHE:
       return AvaxLogo
+    case ChainId.MAGMA_TESTNET:
+      return LavaLogo
     default:
       return EthereumLogo
   }
@@ -67,7 +71,8 @@ function getTokenLogoURI(address: string, chainId: ChainId = ChainId.MAINNET): s
   }
 
   if (networksWithUrls.includes(chainId)) {
-    return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
+    console.log("ASasasassas",`https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/${networkName}/assets/${address}/logo.png`)
+    return `https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   }
 }
 

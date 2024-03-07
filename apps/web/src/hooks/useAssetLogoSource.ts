@@ -54,7 +54,7 @@ export function getInitialUrl(
   }
 
   if (checksummedAddress) {
-    return `https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/${networkName}/assets/${checksummedAddress}/logo.png`
+    return `https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/${networkName}/assets/${checksummedAddress}/logo.png`
   } else {
     return backupImg ?? undefined
   }

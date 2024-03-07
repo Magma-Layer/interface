@@ -55,17 +55,17 @@ export default function SwapHeader() {
         >
           <Trans>Swap</Trans>
         </SwapHeaderTabButton>
-        {limitsEnabled && chainId === ChainId.MAINNET && (
+        {/* {limitsEnabled && chainId === ChainId.MAINNET && (
           <SwapHeaderTabButton $isActive={currentTab === SwapTab.Limit} onClick={() => setCurrentTab(SwapTab.Limit)}>
             <Trans>Limit</Trans>
           </SwapHeaderTabButton>
-        )}
-        {sendEnabled && (
+        )} */}
+        {/* {sendEnabled && (
           <SwapHeaderTabButton $isActive={currentTab === SwapTab.Send} onClick={() => setCurrentTab(SwapTab.Send)}>
             <Trans>Send</Trans>
           </SwapHeaderTabButton>
-        )}
-        <SwapBuyFiatButton />
+        )} */}
+        {/* <SwapBuyFiatButton /> */}
       </HeaderButtonContainer>
       <RowFixed>
         <SettingsTab autoSlippage={autoSlippage} chainId={chainId} trade={trade.trade} />

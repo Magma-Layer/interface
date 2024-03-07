@@ -258,8 +258,8 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 
@@ -1237,7 +1237,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
 .c126 {
   height: 8px;
   width: 40.698463777008904%;
-  background: #FC72FF;
+  background: #EA462B;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-right: 1px solid #F9F9F9;
@@ -1341,7 +1341,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
 
 .c116 {
   background-color: #FFEFFF;
-  color: #FC72FF;
+  color: #EA462B;
   font-size: 20px;
   font-weight: 535;
 }
@@ -1402,7 +1402,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
 }
 
 .c70 path {
-  stroke: #FC72FF;
+  stroke: #EA462B;
   background: #7D7D7D;
   fill: none;
 }
@@ -1695,8 +1695,8 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
   border-radius: 900px;
   width: 50%;
   gap: 8px;
-  color: #FC72FF;
-  background-color: #FC72FF1f;
+  color: #EA462B;
+  background-color: #EA462B1f;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -1719,7 +1719,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
 }
 
 .c75 {
-  fill: #FC72FF;
+  fill: #EA462B;
   rotate: 90deg;
 }
 
@@ -1806,7 +1806,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #FC72FF;
+  color: #EA462B;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -2267,7 +2267,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
               class="c7"
               href="/explore/ethereum"
             >
-              Explore 
+              Explore
               <svg
                 fill="none"
                 height="14"
@@ -2288,7 +2288,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
               class="c7"
               href="/explore/pools/ethereum"
             >
-              Pools 
+              Pools
               <svg
                 fill="none"
                 height="14"
@@ -2315,7 +2315,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
               >
                 USDC / WETH
               </h1>
-               
+
               <div
                 class="c0 c1 c10"
                 data-testid="breadcrumb-token-address"
@@ -2344,12 +2344,12 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                   <img
                     class="c16"
                     size="32"
-                    src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                    src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                   />
                   <img
                     class="c16"
                     size="32"
-                    src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                    src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                   />
                 </div>
               </div>
@@ -2366,7 +2366,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                     >
                       USDC
                     </a>
-                     / 
+                     /
                     <a
                       class="c19"
                       href="/explore/tokens/ethereum/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
@@ -4697,7 +4697,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                   <svg
                     class="c70 c71"
                     fill="none"
-                    stroke="#FC72FF"
+                    stroke="#EA462B"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -4914,7 +4914,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                                     >
                                       <img
                                         class="c105"
-                                        src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                                        src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                                       />
                                     </div>
                                   </div>
@@ -5044,7 +5044,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                                       >
                                         <img
                                           class="c105"
-                                          src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                                          src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                                         />
                                       </div>
                                     </div>
@@ -5118,7 +5118,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
             <div
               class="c0 c1 c123"
             >
-              90.9M 
+              90.9M
               <a
                 class="c124"
                 href="/explore/tokens/ethereum/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
@@ -5132,7 +5132,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                   >
                     <img
                       class="c125"
-                      src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                      src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                     />
                   </div>
                 </div>
@@ -5142,7 +5142,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
             <div
               class="c0 c1 c123"
             >
-              82.5K 
+              82.5K
               <a
                 class="c124"
                 href="/explore/tokens/ethereum/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
@@ -5156,7 +5156,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                   >
                     <img
                       class="c125"
-                      src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                      src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                     />
                   </div>
                 </div>
@@ -5307,12 +5307,12 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                   <img
                     class="c139"
                     size="20"
-                    src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                    src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                   />
                   <img
                     class="c139"
                     size="20"
-                    src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                    src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                   />
                 </div>
               </div>
@@ -5411,7 +5411,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                 >
                   <img
                     class="c148"
-                    src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+                    src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
                   />
                 </div>
               </div>
@@ -5426,7 +5426,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                 <div
                   class="c0 c149"
                 >
-                  USDC 
+                  USDC
                   <svg
                     fill="none"
                     height="16"
@@ -5529,7 +5529,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                 >
                   <img
                     class="c148"
-                    src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+                    src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
                   />
                 </div>
               </div>
@@ -5544,7 +5544,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
                 <div
                   class="c0 c149"
                 >
-                  WETH 
+                  WETH
                   <svg
                     fill="none"
                     height="16"

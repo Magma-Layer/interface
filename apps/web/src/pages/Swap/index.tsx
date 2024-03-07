@@ -53,7 +53,6 @@ export default function SwapPage({ className }: { className?: string }) {
 
   const initialInputCurrency = useCurrency(parsedCurrencyState.inputCurrencyId, chainId)
   const initialOutputCurrency = useCurrency(parsedCurrencyState.outputCurrencyId, chainId)
-
   return (
     <Trace page={InterfacePageName.SWAP_PAGE} shouldLogImpression>
       <PageWrapper>

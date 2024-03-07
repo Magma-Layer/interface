@@ -97,8 +97,8 @@ exports[`<Dialog /> renders different button types 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 
@@ -692,8 +692,8 @@ exports[`<Dialog /> renders the Dialog component correctly 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 

@@ -415,7 +415,7 @@ export const uniCurrencyInfo: CurrencyInfo = {
   currencyId: currencyId(UNI[ChainId.Mainnet]),
   currency: UNI[ChainId.Mainnet],
   logoUrl:
-    'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png',
+    'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png',
   safetyLevel: SafetyLevel.Verified,
 }
 
@@ -423,7 +423,7 @@ export const daiCurrencyInfo: CurrencyInfo = {
   currencyId: currencyId(DAI),
   currency: DAI,
   logoUrl:
-    'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png',
+    'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png',
   safetyLevel: SafetyLevel.Verified,
 }
 
@@ -431,7 +431,7 @@ export const arbitrumDaiCurrencyInfo: CurrencyInfo = {
   currencyId: currencyId(DAI_ARBITRUM_ONE),
   currency: DAI_ARBITRUM_ONE,
   logoUrl:
-    'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png',
+    'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png',
   safetyLevel: SafetyLevel.Verified,
 }
 

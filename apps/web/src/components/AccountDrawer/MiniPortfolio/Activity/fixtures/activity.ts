@@ -303,7 +303,7 @@ const mockWrappedEthTransferInPartsFragment: TokenTransferPartsFragment = {
       logo: {
         __typename: 'Image',
         id: 'weth_image',
-        url: 'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
+        url: 'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
       },
     },
   },

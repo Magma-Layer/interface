@@ -70,7 +70,7 @@ const meta: Meta<typeof SwapSummaryItem> = {
                   id: 'VG9rZW5Qcm9qZWN0OlRva2VuOkFSQklUUlVNXzB4REExMDAwOWNCZDVEMDdkZDBDZUNjNjYxNjFGQzkzRDdjOTAwMGRhMQ==',
                   isSpam: false,
                   logoUrl:
-                    'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png',
+                    'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png',
                   safetyLevel: 'VERIFIED',
                 },
                 symbol: 'DAI',

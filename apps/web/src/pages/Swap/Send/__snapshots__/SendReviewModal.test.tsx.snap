@@ -189,8 +189,8 @@ exports[`SendCurrencyInputform should render input in fiat correctly 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 
@@ -286,7 +286,7 @@ exports[`SendCurrencyInputform should render input in fiat correctly 1`] = `
 }
 
 .c29 {
-  background-color: #FC72FF;
+  background-color: #EA462B;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
@@ -564,7 +564,7 @@ exports[`SendCurrencyInputform should render input in fiat correctly 1`] = `
           >
             <img
               class="c21"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
             />
           </div>
         </div>
@@ -893,8 +893,8 @@ exports[`SendCurrencyInputform should render input in token amount correctly 1`]
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 
@@ -990,7 +990,7 @@ exports[`SendCurrencyInputform should render input in token amount correctly 1`]
 }
 
 .c29 {
-  background-color: #FC72FF;
+  background-color: #EA462B;
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
@@ -1268,7 +1268,7 @@ exports[`SendCurrencyInputform should render input in token amount correctly 1`]
           >
             <img
               class="c21"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
             />
           </div>
         </div>

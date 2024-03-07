@@ -475,7 +475,7 @@ exports[`SendCurrencyInputform renders input in fiat correctly 1`] = `
           >
             <img
               class="c24"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
             />
           </div>
           <div
@@ -971,7 +971,7 @@ exports[`SendCurrencyInputform renders input in token amount correctly 1`] = `
           >
             <img
               class="c23"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
             />
           </div>
           <div
@@ -1478,7 +1478,7 @@ exports[`SendCurrencyInputform should render placeholder values 1`] = `
           >
             <img
               class="c24"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
             />
           </div>
           <div

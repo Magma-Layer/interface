@@ -186,7 +186,7 @@ exports[`PoolDetailsHeader renders breadcrumb text correctly 1`] = `
       class="c1"
       href="/explore/ethereum"
     >
-      Explore 
+      Explore
       <svg
         fill="none"
         height="14"
@@ -207,7 +207,7 @@ exports[`PoolDetailsHeader renders breadcrumb text correctly 1`] = `
       class="c1"
       href="/explore/pools/ethereum"
     >
-      Pools 
+      Pools
       <svg
         fill="none"
         height="14"
@@ -234,7 +234,7 @@ exports[`PoolDetailsHeader renders breadcrumb text correctly 1`] = `
       >
         USDC / WETH
       </h1>
-       
+
       <div
         class="c2 c3 c6"
         data-testid="breadcrumb-token-address"
@@ -517,12 +517,12 @@ exports[`PoolDetailsHeader renders header text correctly 1`] = `
           <img
             class="c5"
             size="32"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
           />
           <img
             class="c5"
             size="32"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
           />
         </div>
       </div>
@@ -539,7 +539,7 @@ exports[`PoolDetailsHeader renders header text correctly 1`] = `
             >
               USDC
             </a>
-             / 
+             /
             <a
               class="c8"
               href="/explore/tokens/ethereum/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"

@@ -8,6 +8,8 @@ import { useIsDarkMode } from 'theme/components/ThemeToggle'
 import { ReactComponent as arbitrum } from './ChainSymbols/arbitrum.svg'
 import { ReactComponent as avax } from './ChainSymbols/avax.svg'
 import { ReactComponent as base } from './ChainSymbols/base.svg'
+import { ReactComponent as magma } from './ChainSymbols/magma.svg'
+
 import { ReactComponent as bnb } from './ChainSymbols/bnb.svg'
 import { ReactComponent as celo } from './ChainSymbols/celo.svg'
 import { ReactComponent as celoLight } from './ChainSymbols/celo_light.svg'
@@ -24,7 +26,6 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
     case ChainId.MAINNET:
     case ChainId.GOERLI:
     case ChainId.SEPOLIA:
-    case ChainId.MAGMA_TESTNET:
 
       return {
         Symbol: ethereum,
@@ -83,6 +84,14 @@ export function getChainUI(chainId: ChainId, darkMode: boolean): ChainUI | undef
         bgColor: '#0052FF33',
         textColor: '#0052FF',
       }
+
+    case ChainId.MAGMA_TESTNET:
+      return {
+        Symbol: magma,
+        bgColor: '#6c696933',
+        textColor: '#EA462B',
+      }
+
     default:
       return undefined
   }

@@ -43,6 +43,7 @@ export default function AssetLogo({
   size = '24px',
   style,
 }: AssetLogoProps) {
+
   return (
     <LogoContainer style={{ height: size, width: size, ...style }}>
       <PortfolioLogo currencies={currency ? [currency] : []} size={size} chainId={chainId} />

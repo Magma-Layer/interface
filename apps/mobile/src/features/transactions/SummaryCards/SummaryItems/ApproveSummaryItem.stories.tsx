@@ -37,7 +37,7 @@ const meta: Meta<typeof ApproveSummaryItem> = {
                   __typename: 'TokenProject',
                   id: 'VG9rZW5Qcm9qZWN0OlRva2VuOkFSQklUUlVNXzB4NWZmNzcyYTM1MjkxQkZBOTJkNTYxNDQ3MzVjMEEzNzhlNjQyM0Y4NA==',
                   logoUrl:
-                    'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39/logo.png',
+                    'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39/logo.png',
                   safetyLevel: 'MEDIUM_WARNING',
                   isSpam: false,
                 },
@@ -67,7 +67,7 @@ const meta: Meta<typeof ApproveSummaryItem> = {
                   __typename: 'TokenProject',
                   id: 'VG9rZW5Qcm9qZWN0OlRva2VuOkFSQklUUlVNXzB4NWZmNzcyYTM1MjkxQkZBOTJkNTYxNDQ3MzVjMEEzNzhlNjQyM0Y4NA==',
                   logoUrl:
-                    'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39/logo.png',
+                    'https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39/logo.png',
                   safetyLevel: 'MEDIUM_WARNING',
                   isSpam: false,
                 },

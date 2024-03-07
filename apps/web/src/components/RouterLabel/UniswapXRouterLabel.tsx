@@ -7,10 +7,10 @@ import { BoxProps } from '../../nft/components/Box'
 
 // Gradient with a fallback to solid color.
 const Gradient = styled.div`
-  color: #4673fa;
+  color: #201C1B;
 
   @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
-    background-image: linear-gradient(91.39deg, #4673fa -101.76%, #9646fa 101.76%);
+    background-image: linear-gradient(91.39deg, #201C1B -101.76%, #EA462B 101.76%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -36,8 +36,8 @@ export const UniswapXRouterIcon = ({ testId }: { testId?: string }) => {
           y2="-11.6017"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#4673FA" />
-          <stop offset="1" stopColor="#9646FA" />
+          <stop stopColor="#201C1B" />
+          <stop offset="1" stopColor="#EA462B" />
         </linearGradient>
       </defs>
       <path

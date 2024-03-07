@@ -43,5 +43,6 @@ export function Banners() {
     return <OutageBanner chainId={pageChainId} />
   }
 
-  return <WalletAppPromoBanner />
+  // return <WalletAppPromoBanner />
+  return <div/>
 }

@@ -103,8 +103,8 @@ export default function DevFlagsBox() {
       {isOpen ? (
         <RowBetween>
           <ThemedText.SubHeader>
-            {isDevelopmentEnv() && 'Local Overrides'}
-            {isStagingEnv() && 'Staging Overrides'}
+            {/* {isDevelopmentEnv() && 'Local Overrides'} */}
+            {/* {isStagingEnv() && 'Staging Overrides'} */}
           </ThemedText.SubHeader>
           <SettingsContainer
             onClick={(e) => {

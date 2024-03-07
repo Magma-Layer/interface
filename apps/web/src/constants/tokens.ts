@@ -200,6 +200,17 @@ const CELO_CELO_ALFAJORES = new Token(
   'CELO',
   'Celo'
 )
+
+
+const MAGMA_LAVA = new Token(
+  ChainId.CELO_ALFAJORES,
+  '0xF194afDf50B03e69Bd7D057c1Aa9e10c9954E4C9',
+  18,
+  'LAVA',
+  'LAVA'
+)
+
+
 export const CUSD_CELO_ALFAJORES = new Token(
   ChainId.CELO_ALFAJORES,
   '0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1',
@@ -359,6 +370,10 @@ export function isCelo(chainId: number): chainId is ChainId.CELO | ChainId.CELO_
   return chainId === ChainId.CELO_ALFAJORES || chainId === ChainId.CELO
 }
 
+
+export function isMagma(chainId: number): chainId is ChainId.MAGMA_TESTNET {
+  return chainId === ChainId.MAGMA_TESTNET
+}
 function getCeloNativeCurrency(chainId: number) {
   switch (chainId) {
     case ChainId.CELO_ALFAJORES:
@@ -369,6 +384,8 @@ function getCeloNativeCurrency(chainId: number) {
       throw new Error('Not celo')
   }
 }
+
+
 
 export function isPolygon(chainId: number): chainId is ChainId.POLYGON | ChainId.POLYGON_MUMBAI {
   return chainId === ChainId.POLYGON_MUMBAI || chainId === ChainId.POLYGON
@@ -411,6 +428,25 @@ class BscNativeCurrency extends NativeCurrency {
   public constructor(chainId: number) {
     if (!isBsc(chainId)) throw new Error('Not bnb')
     super(chainId, 18, 'BNB', 'BNB')
+  }
+}
+
+
+class MagmaNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId
+  }
+
+  get wrapped(): Token {
+    if (!isMagma(this.chainId)) throw new Error('Not magma')
+    const wrapped = WRAPPED_NATIVE_CURRENCY[this.chainId]
+    invariant(wrapped instanceof Token)
+    return wrapped
+  }
+
+  public constructor(chainId: number) {
+    if (!isMagma(chainId)) throw new Error('Not Magma')
+    super(chainId, 18, 'LAVA', 'LAVA')
   }
 }
 
@@ -458,7 +494,10 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
     nativeCurrency = new PolygonNativeCurrency(chainId)
   } else if (isCelo(chainId)) {
     nativeCurrency = getCeloNativeCurrency(chainId)
-  } else if (isBsc(chainId)) {
+  }else if (isMagma(chainId)) {
+    nativeCurrency = new MagmaNativeCurrency(chainId)
+  }
+  else if (isBsc(chainId)) {
     nativeCurrency = new BscNativeCurrency(chainId)
   } else if (isAvalanche(chainId)) {
     nativeCurrency = new AvaxNativeCurrency(chainId)

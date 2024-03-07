@@ -67,14 +67,34 @@ const CHAIN_INFO: ChainInfoMap = {
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_1,
   },
+  // [ChainId.MAGMA_TESTNET]: {
+    // networkType: NetworkType.L2,
+    // docs: 'https://testnet.magma.foundation/',
+    // explorer: 'https://testnet.magma.foundation/',
+    // infoLink: 'https://info.uniswap.org/#/',
+  //   label: 'Magma',
+    // nativeCurrency: { name: 'LAVA', symbol: 'LAVA', decimals: 18 },
+  //   color: darkTheme.chain_1,
+  // },
+
+
   [ChainId.MAGMA_TESTNET]: {
     networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms(`25m`),
+    bridge: 'https://testnet.magma.foundation/',
+    defaultListUrl: OPTIMISM_LIST,
+    // docs: 'https://optimism.io/',
     docs: 'https://testnet.magma.foundation/',
     explorer: 'https://testnet.magma.foundation/',
-    infoLink: 'https://info.uniswap.org/#/',
-    label: 'Magma',
+    infoLink: 'https://info.uniswap.org/#/optimism/',
+    label: 'Magma Testnet',
+    // statusPage: 'https://optimism.io/status',
+    // helpCenterUrl: 'https://help.uniswap.org/en/collections/3137778-uniswap-on-optimistic-ethereum-oξ',
+    // nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
     nativeCurrency: { name: 'LAVA', symbol: 'LAVA', decimals: 18 },
-    color: darkTheme.chain_1,
+
+    color: darkTheme.chain_10,
+    backgroundColor: darkTheme.chain_10_background,
   },
 
   [ChainId.GOERLI]: {

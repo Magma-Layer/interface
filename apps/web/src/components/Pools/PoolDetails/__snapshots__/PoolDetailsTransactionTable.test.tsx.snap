@@ -55,8 +55,8 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 
@@ -74,8 +74,8 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 
@@ -93,7 +93,7 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
 }
 
 .c32 path {
-  stroke: #FC72FF;
+  stroke: #EA462B;
   background: #7D7D7D;
   fill: none;
 }
@@ -193,7 +193,7 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #FC72FF;
+  color: #EA462B;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -747,7 +747,7 @@ exports[`PoolDetailsTransactionsTable renders data filled state 1`] = `
             <svg
               class="c32 c33"
               fill="none"
-              stroke="#FC72FF"
+              stroke="#EA462B"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -812,7 +812,7 @@ exports[`PoolDetailsTransactionsTable renders loading state 1`] = `
 }
 
 .c23 path {
-  stroke: #FC72FF;
+  stroke: #EA462B;
   background: #7D7D7D;
   fill: none;
 }
@@ -907,7 +907,7 @@ exports[`PoolDetailsTransactionsTable renders loading state 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 8px;
-  color: #FC72FF;
+  color: #EA462B;
   font-size: 16px;
   font-weight: 535;
   gap: 8px;
@@ -3195,7 +3195,7 @@ exports[`PoolDetailsTransactionsTable renders loading state 1`] = `
             <svg
               class="c23 c24"
               fill="none"
-              stroke="#FC72FF"
+              stroke="#EA462B"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

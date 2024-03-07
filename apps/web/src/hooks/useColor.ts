@@ -9,7 +9,7 @@ import { getAccessibleColor } from 'theme/utils'
 import { getColor } from 'utils/getColor'
 
 function URIForEthToken(address: string) {
-  return `https://raw.githubusercontent.com/uniswap/assets/master/blockchains/ethereum/assets/${address}/logo.png`
+  return `https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/${address}/logo.png`
 }
 
 const COLOR_CACHE: Record<string, string | undefined> = {}

@@ -96,8 +96,8 @@ exports[`OrderContent should render without error, filled order 1`] = `
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #EA462B;
+  stroke: #EA462B;
   font-weight: 500;
 }
 
@@ -301,11 +301,11 @@ exports[`OrderContent should render without error, filled order 1`] = `
         >
           <img
             class="c5"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
           />
           <img
             class="c5"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
           />
         </div>
       </div>
@@ -344,7 +344,7 @@ exports[`OrderContent should render without error, filled order 1`] = `
               data-testid="INPUT-amount"
             >
               252.074
-               
+
               DAI
             </div>
             <div
@@ -363,7 +363,7 @@ exports[`OrderContent should render without error, filled order 1`] = `
           >
             <img
               class="c15"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
             />
           </div>
         </div>
@@ -403,7 +403,7 @@ exports[`OrderContent should render without error, filled order 1`] = `
               data-testid="OUTPUT-amount"
             >
               0.10684
-               
+
               WETH
             </div>
             <div
@@ -422,7 +422,7 @@ exports[`OrderContent should render without error, filled order 1`] = `
           >
             <img
               class="c15"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
             />
           </div>
         </div>
@@ -453,9 +453,9 @@ exports[`OrderContent should render without error, filled order 1`] = `
             <div
               class="c6 css-142zc9n"
             >
-              1 WETH = 2,359.34 DAI 
+              1 WETH = 2,359.34 DAI
             </div>
-             
+
           </button>
         </div>
       </div>
@@ -861,11 +861,11 @@ exports[`OrderContent should render without error, open order 1`] = `
         >
           <img
             class="c5"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
           />
           <img
             class="c5"
-            src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+            src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
           />
         </div>
       </div>
@@ -904,7 +904,7 @@ exports[`OrderContent should render without error, open order 1`] = `
               data-testid="INPUT-amount"
             >
               252.074
-               
+
               DAI
             </div>
             <div
@@ -923,7 +923,7 @@ exports[`OrderContent should render without error, open order 1`] = `
           >
             <img
               class="c15"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
             />
           </div>
         </div>
@@ -963,7 +963,7 @@ exports[`OrderContent should render without error, open order 1`] = `
               data-testid="OUTPUT-amount"
             >
               0.10684
-               
+
               WETH
             </div>
             <div
@@ -982,7 +982,7 @@ exports[`OrderContent should render without error, open order 1`] = `
           >
             <img
               class="c15"
-              src="https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+              src="https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
             />
           </div>
         </div>
@@ -1013,9 +1013,9 @@ exports[`OrderContent should render without error, open order 1`] = `
             <div
               class="c6 css-142zc9n"
             >
-              1 WETH = 2,359.34 DAI 
+              1 WETH = 2,359.34 DAI
             </div>
-             
+
           </button>
         </div>
       </div>

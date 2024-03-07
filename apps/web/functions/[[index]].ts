@@ -12,7 +12,7 @@ export const onRequest: PagesFunction = async ({ request, next }) => {
   const requestURL = new URL(request.url)
   const imageUri = requestURL.origin + '/images/1200x630_Rich_Link_Preview_Image.png'
   const data = {
-    title: 'Uniswap Interface',
+    title: 'Magma Swap Interface',
     image: imageUri,
     url: request.url,
     description: 'Swap or provide liquidity on the Uniswap Protocol',

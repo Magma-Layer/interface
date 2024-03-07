@@ -71,23 +71,25 @@ export const TESTNET_CHAIN_IDS = [
   ChainId.ARBITRUM_GOERLI,
   ChainId.OPTIMISM_GOERLI,
   ChainId.CELO_ALFAJORES,
-  ChainId.MAGMA_TESTNET
 ] as const
 
 /**
  * All the chain IDs that are running the Ethereum pintocol.
  */
 export const L1_CHAIN_IDS = [
-  ChainId.MAINNET,
+  // ChainId.MAINNET,
+  ChainId.MAGMA_TESTNET,
+
   ChainId.GOERLI,
-  ChainId.SEPOLIA,
-  ChainId.POLYGON,
-  ChainId.POLYGON_MUMBAI,
-  ChainId.CELO,
-  ChainId.CELO_ALFAJORES,
-  ChainId.BNB,
-  ChainId.AVALANCHE,
+  // ChainId.SEPOLIA,
+  // ChainId.POLYGON,
+  // ChainId.POLYGON_MUMBAI,
+  // ChainId.CELO,
+  // ChainId.CELO_ALFAJORES,
+  // ChainId.BNB,
+  // ChainId.AVALANCHE,
 ] as const
+
 
 export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]
 
@@ -97,10 +99,11 @@ export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]
  */
 export const L2_CHAIN_IDS = [
   ChainId.ARBITRUM_ONE,
-  ChainId.ARBITRUM_GOERLI,
-  ChainId.OPTIMISM,
-  ChainId.OPTIMISM_GOERLI,
-  ChainId.BASE,
+  // ChainId.ARBITRUM_GOERLI,
+  // ChainId.OPTIMISM,
+  // ChainId.OPTIMISM_GOERLI,
+  // ChainId.BASE,
+  // ChainId.MAGMA_TESTNET
 ] as const
 
 export type SupportedL2ChainId = (typeof L2_CHAIN_IDS)[number]
