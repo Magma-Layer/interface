@@ -200,7 +200,6 @@
     "@uniswap/redux-multicall": "1.1.8",
     "@uniswap/router-sdk": "1.7.1",
     "@uniswap/sdk-core": "https://github.com/Mantle-Protocol/sdk-core",
-    "@uniswap/smart-order-router": "https://github.com/Mantle-Protocol/smart-order-router",
     "@uniswap/token-lists": "1.0.0-beta.33",
     "@uniswap/uniswapx-sdk": "1.4.1",
     "@uniswap/universal-router-sdk": "https://github.com/Mantle-Protocol/universal-router-sdk",

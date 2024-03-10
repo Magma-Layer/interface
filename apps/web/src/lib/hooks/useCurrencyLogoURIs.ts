@@ -71,7 +71,6 @@ function getTokenLogoURI(address: string, chainId: ChainId = ChainId.MAINNET): s
   }
 
   if (networksWithUrls.includes(chainId)) {
-    console.log("ASasasassas",`https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/${networkName}/assets/${address}/logo.png`)
     return `https://raw.githubusercontent.com/Mantle-Protocol/assets/master/blockchains/${networkName}/assets/${address}/logo.png`
   }
 }

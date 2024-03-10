@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html translate="no">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>MagmaSwap</title>
+<head>
+  <meta charset="utf-8" />
 
-    <!--
+  <title>MagmaSwap</title>
+
+  <!--
       %PUBLIC_URL% will be replaced with the URL of the `public` folder during build.
       Only files inside the `public` folder can be referenced from the HTML.
     -->
-    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/images/192x192_App_Icon.png" />
-    <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/images/512x512_App_Icon.png" />
+  <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/images/192x192_App_Icon.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/images/512x512_App_Icon.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#fff" />
-    <% const cspConfig = require('./csp.json'); %>
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src <%= cspConfig.defaultSrc.join(' ') %>; script-src <%= cspConfig.scriptSrc.join(' ') %>; style-src <%= cspConfig.styleSrc.join(' ') %>; img-src <%= cspConfig.imgSrc.join(' ') %>; frame-src <%= cspConfig.frameSrc.join(' ') %>; connect-src <%= cspConfig.connectSrc.join(' ') %>; worker-src <%= cspConfig.workerSrc.join(' ') %>;"
-    >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#fff" />
+  <% const cspConfig=require('./csp.json'); %>
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src <%= cspConfig.defaultSrc.join(' ') %>; script-src <%= cspConfig.scriptSrc.join(' ') %>; style-src <%= cspConfig.styleSrc.join(' ') %>; img-src <%= cspConfig.imgSrc.join(' ') %>; frame-src <%= cspConfig.frameSrc.join(' ') %>; connect-src <%= cspConfig.connectSrc.join(' ') %>; worker-src <%= cspConfig.workerSrc.join(' ') %>;">
 
+
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://swap-kohl.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MagmaSwap">
+    <meta property="og:description" content="Swap and Add liquidity on MagmaSwap | Powered By Magma Chain">
+    <meta property="og:image" content="https://magma.foundation/og.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="swap-kohl.vercel.app">
+    <meta property="twitter:url" content="https://swap-kohl.vercel.app/">
+    <meta name="twitter:title" content="MagmaSwap">
+    <meta name="twitter:description" content="Swap and Add liquidity on MagmaSwap | Powered By Magma Chain">
+    <meta name="twitter:image" content="https://magma.foundation/og.png">
+
+    <!-- Meta Tags  via https://www.opengraph.xyz -->
     <!--
       Apple Smart App Banner for Safari on iOS
       https://developer.apple.com/documentation/webkit/promoting_apps_with_smart_app_banners
@@ -32,8 +49,8 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <link rel="preconnect" href="https://interface.gateway.uniswap.org/" crossorigin/>
-    <link rel="preconnect" href="https://mainnet.infura.io/" crossorigin/>
+    <link rel="preconnect" href="https://interface.gateway.uniswap.org/" crossorigin />
+    <link rel="preconnect" href="https://mainnet.infura.io/" crossorigin />
 
     <link rel="preload" href="%PUBLIC_URL%/fonts/RoobertVFUprights.woff" as="font" type="font/woff" crossorigin />
     <link rel="preload" href="%PUBLIC_URL%/fonts/RoobertVFUprights.woff2" as="font" type="font/woff2" crossorigin />
@@ -129,16 +146,17 @@
         }
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <div id="root">
-      <!-- Triggers the font to load immediately and then is replaced by the app -->
-      <div>&emsp;</div>
-    </div>
+  <div id="root">
+    <!-- Triggers the font to load immediately and then is replaced by the app -->
+    <div>&emsp;</div>
+  </div>
 
-    <div id="background-radial-gradient"></div>
-  </body>
+  <div id="background-radial-gradient"></div>
+</body>
+
 </html>

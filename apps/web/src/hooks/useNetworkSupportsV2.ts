@@ -4,7 +4,7 @@ import { useV2EverywhereEnabled } from 'featureFlags/flags/v2Everywhere'
 
 export function useNetworkSupportsV2() {
   const { chainId } = useWeb3React()
-  const isV2EverywhereEnabled = useV2EverywhereEnabled()
+  const isV2EverywhereEnabled = false
 
   return (
     chainId && ((isV2EverywhereEnabled && isSupportedChain(chainId)) || SUPPORTED_V2POOL_CHAIN_IDS.includes(chainId))

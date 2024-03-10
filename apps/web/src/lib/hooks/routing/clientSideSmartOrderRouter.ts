@@ -54,6 +54,8 @@ async function getQuote(
   const quoteCurrency = tradeType === TradeType.EXACT_INPUT ? currencyOut : currencyIn
 
   const amount = CurrencyAmount.fromRawAmount(baseCurrency, JSBI.BigInt(amountRaw))
+
+  //@ts-ignore
   // TODO (WEB-2055): explore initializing client side routing on first load (when amountRaw is null) if there are enough users using client-side router preference.
   const swapRoute = await router.route(amount, quoteCurrency, tradeType, /*swapConfig=*/ undefined, routerConfig)
 
@@ -80,6 +82,8 @@ export async function getClientSideQuote(
   router: AlphaRouter,
   config: Partial<AlphaRouterConfig>
 ) {
+
+
 
   return getQuote(
     {
