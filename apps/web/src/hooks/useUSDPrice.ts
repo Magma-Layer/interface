@@ -27,7 +27,6 @@ function useETHPrice(currency?: Currency): {
 } {
   const chainId = currency?.chainId
   const isSupported = currency && isGqlSupportedChain(chainId)
-
   const amountOut = isSupported ? ETH_AMOUNT_OUT[chainId] : undefined
   const { trade, state } = useRoutingAPITrade(
     !isSupported /* skip */,
@@ -37,11 +36,12 @@ function useETHPrice(currency?: Currency): {
     INTERNAL_ROUTER_PREFERENCE_PRICE
   )
 
+
   return useMemo(() => {
+
     if (!isSupported) {
       return { data: undefined, isLoading: false }
     }
-
     if (currency?.wrapped.equals(nativeOnChain(chainId).wrapped)) {
       return {
         data: new Price(currency, currency, '1', '1'),
@@ -80,6 +80,7 @@ export function useUSDPrice(
 
   // Use ETH-based pricing if available.
   const { data: tokenEthPrice, isLoading: isTokenEthPriceLoading } = useETHPrice(currency)
+  console.log({tokenEthPrice})
   const isTokenEthPriced = Boolean(tokenEthPrice || isTokenEthPriceLoading)
   const { data, networkStatus } = useTokenSpotPriceQuery({
     variables: { chain: chain ?? Chain.Ethereum, address: getNativeTokenDBAddress(chain ?? Chain.Ethereum) },

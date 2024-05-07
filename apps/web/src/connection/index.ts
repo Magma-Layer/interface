@@ -74,7 +74,7 @@ const [deprecatedWeb3Network, deprecatedWeb3NetworkHooks] = initializeConnector<
     new Network({
       actions,
       urlMap: DEPRECATED_RPC_PROVIDERS,
-      defaultChainId: 1,
+      defaultChainId: 6969696969,
     })
 )
 export const deprecatedNetworkConnection: Connection = {
@@ -225,7 +225,7 @@ const coinbaseWalletConnection: Connection = {
 
 export const connections = [
   gnosisSafeConnection,
-  uniwalletWCV2ConnectConnection,
+  // uniwalletWCV2ConnectConnection,
   deprecatedInjectedConnection,
   walletConnectV2Connection,
   coinbaseWalletConnection,

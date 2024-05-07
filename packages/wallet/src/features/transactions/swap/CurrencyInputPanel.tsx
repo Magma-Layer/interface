@@ -94,7 +94,6 @@ export const CurrencyInputPanel = memo(
     const colors = useSporeColors()
     const { convertFiatAmountFormatted, formatCurrencyAmount, addFiatSymbolToNumber } =
       useLocalizationContext()
-
     const inputRef = useRef<TextInput>(null)
     const appFiatCurrency = useAppFiatCurrencyInfo()
 

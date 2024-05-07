@@ -13465,6 +13465,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uniswap/router-sdk@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "@uniswap/router-sdk@npm:1.9.0"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@uniswap/sdk-core": ^4.2.0
+    "@uniswap/swap-router-contracts": ^1.1.0
+    "@uniswap/v2-sdk": ^4.3.0
+    "@uniswap/v3-sdk": ^3.11.0
+  checksum: f2059c68deaee52968301b5f399b689240072f59019462b48fbd8baa7c15ed0a823f97b7460dbb0c87a7313d81044a1aee3267354981bc5072da307980739cd6
+  languageName: node
+  linkType: hard
+
 "@uniswap/sdk-core@https://github.com/Mantle-Protocol/sdk-core":
   version: 4.1.2
   resolution: "@uniswap/sdk-core@https://github.com/Mantle-Protocol/sdk-core.git#commit=3262b43c2bf9144907bcb1d5041c90d193ce8d8c"
@@ -13482,7 +13495,7 @@ __metadata:
 
 "@uniswap/smart-order-router@file:../smart-order-router::locator=universe%40workspace%3A.":
   version: 3.17.8
-  resolution: "@uniswap/smart-order-router@file:../smart-order-router#../smart-order-router::hash=592acb&locator=universe%40workspace%3A."
+  resolution: "@uniswap/smart-order-router@file:../smart-order-router#../smart-order-router::hash=7c7e11&locator=universe%40workspace%3A."
   dependencies:
     "@uniswap/default-token-list": ^11.2.0
     "@uniswap/permit2-sdk": ^1.2.0
@@ -13508,7 +13521,7 @@ __metadata:
     stats-lite: ^2.2.0
   peerDependencies:
     jsbi: ^3.2.0
-  checksum: ceed2dfe3a730e843f1032a8dc41033f705e727d6d992f467e787a357ecf86532b50d3dabbdc291c71089db5f534a9a6b88a75d94a41220c399da2f4dba57b15
+  checksum: e81faffa8700040d31e5292ef336609c111dfaaf5263610d3044e038dae50e2902573fb1f0c1407229aa923ecc82ad97ebc84081d539ee5ea55aebcaec7d23e9
   languageName: node
   linkType: hard
 
@@ -13579,18 +13592,18 @@ __metadata:
   linkType: hard
 
 "@uniswap/universal-router-sdk@npm:^1.2.2":
-  version: 1.7.1
-  resolution: "@uniswap/universal-router-sdk@npm:1.7.1"
+  version: 1.8.1
+  resolution: "@uniswap/universal-router-sdk@npm:1.8.1"
   dependencies:
     "@uniswap/permit2-sdk": ^1.2.0
-    "@uniswap/router-sdk": ^1.8.0
-    "@uniswap/sdk-core": ^4.0.7
+    "@uniswap/router-sdk": ^1.9.0
+    "@uniswap/sdk-core": ^4.2.0
     "@uniswap/universal-router": 1.6.0
-    "@uniswap/v2-sdk": ^4.1.0
-    "@uniswap/v3-sdk": ^3.10.1
+    "@uniswap/v2-sdk": ^4.2.0
+    "@uniswap/v3-sdk": ^3.11.0
     bignumber.js: ^9.0.2
     ethers: ^5.3.1
-  checksum: 4b2036ac4f320c7b8aa107f5b4fad17c8e6bf3b56d22e0297085ad8742bd7277573250701d834fb5d79c5571f60b160f6895d22856cf616142b19a74469cd9ca
+  checksum: 871f1c8754442de1b726b81be6d4a9f9651ca5de5bdafc6c5fad755525b3c9557f14f8ba9393ca31b799c1280876d75e7c28868d3c68f9a509c098d66e73e1de
   languageName: node
   linkType: hard
 
@@ -16004,13 +16017,13 @@ __metadata:
   linkType: hard
 
 "axios@npm:^1.6.7":
-  version: 1.6.7
-  resolution: "axios@npm:1.6.7"
+  version: 1.6.8
+  resolution: "axios@npm:1.6.8"
   dependencies:
-    follow-redirects: ^1.15.4
+    follow-redirects: ^1.15.6
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: 87d4d429927d09942771f3b3a6c13580c183e31d7be0ee12f09be6d5655304996bb033d85e54be81606f4e89684df43be7bf52d14becb73a12727bf33298a082
+  checksum: bf007fa4b207d102459300698620b3b0873503c6d47bf5a8f6e43c0c64c90035a4f698b55027ca1958f61ab43723df2781c38a99711848d232cad7accbcdfcdd
   languageName: node
   linkType: hard
 
@@ -24065,6 +24078,16 @@ __metadata:
     debug:
       optional: true
   checksum: 5ca49b5ce6f44338cbfc3546823357e7a70813cecc9b7b768158a1d32c1e62e7407c944402a918ea8c38ae2e78266312d617dc68783fac502cbb55e1047b34ec
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.6
+  resolution: "follow-redirects@npm:1.15.6"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: a62c378dfc8c00f60b9c80cab158ba54e99ba0239a5dd7c81245e5a5b39d10f0c35e249c3379eae719ff0285fff88c365dd446fab19dee771f1d76252df1bbf5
   languageName: node
   linkType: hard
 

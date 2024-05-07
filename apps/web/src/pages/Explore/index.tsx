@@ -191,6 +191,7 @@ const Explore = ({ initialTab }: { initialTab?: ExploreTab }) => {
   const { tab: tabName, chainName } = useExploreParams()
   const tab = tabName ?? ExploreTab.Tokens
   const chain = validateUrlChainParam(chainName)
+
   useEffect(() => {
     const tabIndex = Pages.findIndex((page) => page.key === tab)
     if (tabIndex !== -1) {

@@ -88,6 +88,9 @@ export function useRoutingAPITrade<TTradeType extends TradeType>(
     tradeType,
     routerPreference,
   })
+
+
+  console.log({queryArgs})
   // skip all pricing and quote requests if the window is not focused
   const isWindowVisible = useIsWindowVisible()
 

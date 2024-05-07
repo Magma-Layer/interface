@@ -164,13 +164,13 @@ function TVLChartSection({ chainId }: { chainId: number }) {
   const isSmallScreen = !useScreenSize()['sm']
   if (isSmallScreen) {
     const currentTVL = lastEntry?.values.reduce((acc, curr) => acc + curr, 0)
-    return <MinimalStatDisplay title={<Trans>Uniswap TVL</Trans>} value={currentTVL} />
+    return <MinimalStatDisplay title={"MagmaSwap TVL"} value={currentTVL} />
   }
 
   return (
     <SectionContainer>
       <SectionTitle>
-        <Trans>Uniswap TVL</Trans>
+        <Trans>MagmaSwap TVL</Trans>
       </SectionTitle>
       {loading || error ? (
         <div style={{ height: EXPLORE_CHART_HEIGHT_PX }}>Loading...</div>

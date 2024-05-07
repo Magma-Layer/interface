@@ -134,7 +134,19 @@ export const USDT_OPTIMISM = new Token(
   'USDT',
   'Tether USD'
 )
-export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', 8, 'WBTC', 'Wrapped BTC')
+
+
+export const USDM = new Token(ChainId.MAGMA_TESTNET, '0x131761D30a124830AFcF503B84b4184C19596307', 18, 'USDM', 'USD Magma')
+export const PNDC = new Token(ChainId.MAGMA_TESTNET, '0xeE8919C51239590531715790158fa40296163F2A', 18, 'PNDC', 'POND Coin')
+
+
+export const WBTCMagma = new Token(ChainId.MAGMA_TESTNET, '0xAAc5eecd28324faaA7C8d6810773F82523B986Db', 18, 'wBTC', 'Wrapped BTC')
+export const EZBTC = new Token(ChainId.MAGMA_TESTNET, '0xDE42497B5cEe8181231E395d49818E24a6E40E56', 18, 'ezBTC', 'EZBTC')
+export const ROCK = new Token(ChainId.MAGMA_TESTNET, '0x15dA85eAD7C729F5654DFffaC5ef72305A7B8405', 18, 'ROCK', 'ROCK')
+
+
+export const WBTC = new Token(ChainId.MAGMA_TESTNET, '0xAAc5eecd28324faaA7C8d6810773F82523B986Db', 8, 'WBTC', 'Wrapped BTC')
+
 export const WBTC_ARBITRUM_ONE = new Token(
   ChainId.ARBITRUM_ONE,
   '0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f',
@@ -510,6 +522,7 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
 export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in ChainId]?: string } } = {
   USDC: {
     [ChainId.MAINNET]: USDC_MAINNET.address,
+    [ChainId.MAGMA_TESTNET]: USDM.address,
     [ChainId.ARBITRUM_ONE]: USDC_ARBITRUM.address,
     [ChainId.ARBITRUM_GOERLI]: USDC_ARBITRUM_GOERLI.address,
     [ChainId.OPTIMISM]: USDC_OPTIMISM.address,

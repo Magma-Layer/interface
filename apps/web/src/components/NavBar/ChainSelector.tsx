@@ -27,6 +27,8 @@ import { NavDropdown } from './NavDropdown'
 
 const NETWORK_SELECTOR_CHAINS = [...L1_CHAIN_IDS, ...L2_CHAIN_IDS]
 
+
+
 const ChainSelectorWrapper = styled.div`
   position: relative;
 `
@@ -90,6 +92,8 @@ export const ChainSelector = ({ leftAlign }: { leftAlign?: boolean }) => {
   }, [showTestnets, walletSupportsChain])
 
 
+
+
   const ref = useRef<HTMLDivElement>(null)
   const modalRef = useRef<HTMLDivElement>(null)
   useOnClickOutside(ref, () => setIsOpen(false), [modalRef])
@@ -129,7 +133,7 @@ export const ChainSelector = ({ leftAlign }: { leftAlign?: boolean }) => {
             isPending={selectorChain === pendingChainId}
           />
         ))}
-        {unsupportedChains.map((selectorChain) => (
+        {/* {unsupportedChains.map((selectorChain) => (
           <ChainSelectorRow
             disabled
             onSelectChain={() => undefined}
@@ -137,7 +141,7 @@ export const ChainSelector = ({ leftAlign }: { leftAlign?: boolean }) => {
             key={selectorChain}
             isPending={false}
           />
-        ))}
+        ))} */}
       </Column>
     </NavDropdown>
   )

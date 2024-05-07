@@ -30,7 +30,6 @@ export function transformSwapRouteToGetQuoteResult(
   }: SwapRoute
 ): QuoteResult {
   const routeResponse: Array<(V3PoolInRoute | V2PoolInRoute)[]> = []
-
   for (const subRoute of route) {
     const { amount, quote, tokenPath } = subRoute
 

@@ -112,50 +112,50 @@ export const routes: RouteDefinition[] = [
   //     return args.browserRouterEnabled && args.hash ? <Navigate to={args.hash.replace('#', '')} replace /> : <Landing />
   //   },
   // }),
-  // createRouteDefinition({
-  //   path: '/explore',
-  //   getTitle: getExploreTitle,
-  //   nestedPaths: [':tab', ':chainName', ':tab/:chainName'],
-  //   getElement: () => <RedirectExplore />,
-  //   enabled: (args) => Boolean(args.infoExplorePageEnabled),
-  // }),
-  // createRouteDefinition({
-  //   path: '/explore/tokens/:chainName/:tokenAddress',
-  //   getTitle: () => t`Buy & sell on Uniswap`,
-  //   getElement: () => <TokenDetails />,
-  //   enabled: (args) => Boolean(args.infoExplorePageEnabled),
-  // }),
-  // createRouteDefinition({
-  //   path: '/tokens',
-  //   getTitle: getDefaultTokensTitle,
-  //   getElement: (args) => {
-  //     return args.infoExplorePageEnabled ? <Navigate to="/explore/tokens" replace /> : <Explore />
-  //   },
-  // }),
-  // createRouteDefinition({
-  //   path: '/tokens/:chainName',
-  //   getTitle: getDefaultTokensTitle,
-  //   getElement: (args) => {
-  //     return args.infoExplorePageEnabled ? <RedirectExplore /> : <Explore />
-  //   },
-  // }),
-  // createRouteDefinition({
-  //   path: '/tokens/:chainName/:tokenAddress',
-  //   getTitle: getDefaultTokensTitle,
-  //   getElement: (args) => {
-  //     return args.infoExplorePageEnabled ? <RedirectExplore /> : <TokenDetails />
-  //   },
-  // }),
-  // createRouteDefinition({
-  //   path: '/explore/pools/:chainName/:poolAddress',
-  //   getTitle: () => t`Explore pools on Uniswap`,
-  //   getElement: () => (
-  //     <Suspense fallback={null}>
-  //       <PoolDetails />
-  //     </Suspense>
-  //   ),
-  //   enabled: (args) => Boolean(args.infoExplorePageEnabled && args.infoPoolPageEnabled),
-  // }),
+  createRouteDefinition({
+    path: '/explore',
+    getTitle: getExploreTitle,
+    nestedPaths: [':tab', ':chainName', ':tab/:chainName'],
+    getElement: () => <RedirectExplore />,
+    enabled: (args) => Boolean(args.infoExplorePageEnabled),
+  }),
+  createRouteDefinition({
+    path: '/explore/tokens/:chainName/:tokenAddress',
+    getTitle: () => t`Buy & sell on Uniswap`,
+    getElement: () => <TokenDetails />,
+    enabled: (args) => Boolean(args.infoExplorePageEnabled),
+  }),
+  createRouteDefinition({
+    path: '/tokens',
+    getTitle: getDefaultTokensTitle,
+    getElement: (args) => {
+      return args.infoExplorePageEnabled ? <Navigate to="/explore/tokens" replace /> : <Explore />
+    },
+  }),
+  createRouteDefinition({
+    path: '/tokens/:chainName',
+    getTitle: getDefaultTokensTitle,
+    getElement: (args) => {
+      return args.infoExplorePageEnabled ? <RedirectExplore /> : <Explore />
+    },
+  }),
+  createRouteDefinition({
+    path: '/tokens/:chainName/:tokenAddress',
+    getTitle: getDefaultTokensTitle,
+    getElement: (args) => {
+      return args.infoExplorePageEnabled ? <RedirectExplore /> : <TokenDetails />
+    },
+  }),
+  createRouteDefinition({
+    path: '/explore/pools/:chainName/:poolAddress',
+    getTitle: () => t`Explore pools on Uniswap`,
+    getElement: () => (
+      <Suspense fallback={null}>
+        <PoolDetails />
+      </Suspense>
+    ),
+    enabled: (args) => Boolean(args.infoExplorePageEnabled && args.infoPoolPageEnabled),
+  }),
   // createRouteDefinition({
   //   path: '/vote/*',
   //   getTitle: () => t`Vote on governance proposals on Uniswap`,

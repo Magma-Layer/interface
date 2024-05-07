@@ -188,6 +188,8 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
 
   const showFiatValueInput = Boolean(parsedAmounts[Field.INPUT])
   const showFiatValueOutput = Boolean(parsedAmounts[Field.OUTPUT])
+  console.log("Saasasas",{showFiatValueInput,showFiatValueOutput})
+
   const getSingleUnitAmount = (currency?: Currency) => {
     if (!currency) return
     return CurrencyAmount.fromRawAmount(currency, JSBI.BigInt(10 ** currency.decimals))
@@ -213,6 +215,7 @@ export function SwapForm({ disableTokenInputs = false, onCurrencyChange }: SwapF
 
   const fiatValueTradeInput = useUSDPrice(trade?.inputAmount)
   const fiatValueTradeOutput = useUSDPrice(trade?.outputAmount)
+
   const preTaxFiatValueTradeOutput = useUSDPrice(trade?.outputAmount)
   const [stablecoinPriceImpact, preTaxStablecoinPriceImpact] = useMemo(
     () =>

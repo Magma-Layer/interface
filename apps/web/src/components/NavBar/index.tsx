@@ -77,6 +77,10 @@ export const PageTabs = () => {
       </MenuItem>
       <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Pools</Trans>
+      </MenuItem>
+
+      <MenuItem href="https://magma-info.vercel.app" dataTestId="pool-nav-link"  isActive={isPoolActive}>
+          <Trans>Info</Trans>
         </MenuItem>
       {/* {infoExplorePageEnabled ? (
         <MenuItem
